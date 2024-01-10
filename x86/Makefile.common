@@ -72,7 +72,7 @@ else
 	@chmod a-x $@
 
 %.flat: %.elf
-	$(OBJCOPY) -O elf32-i386 $^ $@
+	$(OBJCOPY) -O binary $^ $@
 	@chmod a-x $@
 endif
 

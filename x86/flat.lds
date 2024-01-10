@@ -6,7 +6,7 @@ PHDRS
 
 SECTIONS
 {
-    . = 4M + SIZEOF_HEADERS;
+    . = 0x0600;
     stext = .;
     .text : { *(.init) *(.text) *(.text.*) } :text
     etext = .;
